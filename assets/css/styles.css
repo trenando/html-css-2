@@ -216,7 +216,7 @@ b {
     max-height: 412px;
 }
 
-.design__icons{
+.design__icons {
     margin-top: 5px;
     display: flex;
     width: 45px;
@@ -225,6 +225,231 @@ b {
 
 .design__img img {
     width: 100%;
+}
+
+/* Комьюнити */
+
+.community {
+    display: flex;
+    justify-content: center;
+    padding: 120px 0;
+}
+
+.community__content {
+    width: 185px;
+}
+
+.community__icon {
+    display: flex;
+    justify-content: center;
+}
+
+.community__title {
+    margin: 25px 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.community__text {
+    text-align: center;
+    color: #000;
+}
+
+.community__img {
+    margin-left: 25px;
+    max-width: 370px;
+    max-height: 244px;
+}
+
+.community__img img {
+    width: 100%;
+}
+
+/* подписка */
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 789px;
+    background: url('../images/subscribe.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.subscribe__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    min-width: 320px;
+    align-items: center;
+}
+
+.subscribe__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.subscribe__block {
+    display: flex;
+    justify-content: flex-start;
+    height: 60px;
+    box-sizing: content-box;
+}
+
+.subscribe__input {
+    height: 100%;
+    padding: 0 0 0 10px;
+    border: 0;
+    width: 280px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2.6px;
+}
+
+.subscribe__input::placeholder {
+    color: #373737;
+}
+
+.subscribe__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.subscribe__button {
+    font-size: 18px;
+    padding: 16px 0;
+    background-color: #16a085;
+    width: 65px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+}
+
+/* Скачать */
+
+.download {
+    padding: 90px 0 115px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.download__title {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #373737;
+    margin-bottom: 5px;
+}
+
+.download__text {
+    color: #373737;
+    margin-bottom: 45px;
+}
+
+.download__place {
+    display: flex;
+    justify-content: center;
+}
+
+.download__platform {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.download__platform:last-child {
+    margin-right: 0;
+}
+
+.download__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    height: 55px;
+    width: 240px;
+    background-color: #1abc9c;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+
+.download__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.download__icon {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 55px;
+    background-color: #16a085;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Футер */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.footer__titles {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer__name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #373737;
+}
+
+.footer__name:after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 14px;
+    background-color: #16a085;
+    margin: 0 10px;
+}
+
+.footer__name:last-child:after {
+    display: none;
+}
+
+.footer__text {
+    margin-top: 15px;
+    font-weight: 700;
+    color: #373737;
 }
 
 @media(max-width:770px) {
@@ -268,12 +493,33 @@ b {
         width: 60%;
         margin: 0 10px;
     }
-    .design__icons{
+    .design__icons {
         margin: 5px auto;
     }
-    .design__number{
+    .design__number {
         margin-top: 30px;
         text-align: center;
+    }
+    /* Комунити */
+    .community {
+        align-items: center;
+        margin: 80px 0 0;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .community__img {
+        margin: 20px 0;
+    }
+    /* Подписка */
+    .subscribe {
+        height: 400px;
+    }
+    /* Загрузка */
+    .download__place {
+        flex-direction: column;
+    }
+    .download__platform {
+        margin: 0 0 20px 0;
     }
 }
 
@@ -324,7 +570,55 @@ b {
     .design__img {
         width: 50%;
     }
-    .design__number{
+    .design__number {
         margin-top: 17px;
+    }
+    /* Комунити */
+    .community {
+        margin: 40px 0 0;
+        padding-bottom: 20px;
+    }
+    .community__img {
+        margin: 10px 10px 0 10px;
+    }
+    /* Подписка */
+    .subscribe {
+        height: 300px;
+    }
+    .subscribe__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .subscribe__block {
+        height: 50px;
+        padding: 0 auto;
+    }
+    .subscribe__input {
+        width: 255px;
+        height: 50px;
+    }
+    .subscribe__button {
+        padding: 11px 0;
+        height: 50px;
+        width: 55px;
+    }
+    /* Загрузка */
+    .download__text {
+        margin: 0 10px 45px 10px;
+    }
+    /* Футер */
+    .footer {
+        flex-direction: column-reverse;
+        height: 190px;
+    }
+    .footer__content{
+        margin: 0 0 40px;
+        align-items: center;
+    }
+    .footer__text {
+        margin-top: 15px;
+    }
+    .footer__img {
+        padding-top: 5px;
     }
 }
